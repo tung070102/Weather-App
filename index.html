@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto+Mono:wght@100;200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/clock.css">
+    <script src="./js/all.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-box" placeholder="Tim kiem thanh pho...">
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-state" class="weather-icon">
+                <p class="temperature">--</p>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">MT moc</div>
+                    <div class="value sunrise">--:--</div>
+                </div>
+                <div class="item">
+                    <div class="label">MT lan</div>
+                    <div class="value sunset">--:--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Do am</div>
+                    <div class="value "><span class="humidity">--</span> %</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gio</div>
+                    <div class="value "><span class="wind-speed">--</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/function.js"></script>
+</body>
+
+</html>
